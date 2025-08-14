@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    /* ----- Configuración Base ----- */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    
+    /* ----- Módulos y Tipos ----- */
+    "moduleResolution": "node",
+    "types": ["node"], // Solo Node.js (eliminado Jest)
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    /* ----- Frontend/Backend ----- */
+    "jsx": "react-jsx",  // Necesario para React (Vite)
+    "resolveJsonModule": true, // Para importar JSONs
+
+    /* ----- Strict Mode ----- */
+    "strict": true,
+    "noUncheckedIndexedAccess": true, // Seguridad en accesos dinámicos
+    "forceConsistentCasingInFileNames": true // Evita errores en Linux/Mac
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
